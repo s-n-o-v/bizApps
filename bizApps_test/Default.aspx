@@ -13,13 +13,13 @@
         <div class="col-sm-3">
             <div class="form-group">
                 <label for="edParam1">Кол-во элементов на странице</label>
-                <asp:TextBox ID="edParam1" name="edParam1" runat="server" CssClass="form-control" />
+                <asp:TextBox ID="edParam1" name="edParam1" runat="server" CssClass="form-control" type="number" min="1" placeholder="Укажите кол-во элементов" />
             </div>
         </div>
         <div class="col-sm-3">
             <div class="form-group">
                 <label for="exampleInputEmail1">№ страницы</label>
-                <asp:TextBox ID="edParam2" runat="server" CssClass="form-control" />
+                <asp:TextBox ID="edParam2" runat="server" CssClass="form-control" type="number" min="1" placeholder="Укажите № страницы" />
             </div>
         </div>
         <div class="col-sm-4">

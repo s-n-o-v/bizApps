@@ -29,8 +29,8 @@ public partial class _Default : Page
     protected void load_Click(object sender, EventArgs e)
     {
         SearchForm frm = new SearchForm();
-        frm.itemsPerPage = edParam1.Text;
-        frm.PageNum = edParam2.Text;
+        if (!string.IsNullOrEmpty(edParam1.Text)) frm.itemsPerPage = Convert.ToInt32(edParam1.Text);
+        if (!string.IsNullOrEmpty(edParam2.Text)) frm.PageNum = Convert.ToInt32(edParam2.Text);
 
         var context = new ValidationContext(frm);
         var results = new List<ValidationResult>();
